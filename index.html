@@ -88,19 +88,44 @@
         <h2>Using the text-transform property</h2>
 
         <p class="uppercase">
-          This text is transformed to uppercase.
+          This text is transformed to uppercase by css but
+          node firstChild is text without uppercase.
         </p>
         <p class="lowercase">
           This text is transformed to lowercase.
         </p>
         <p class="capitalize">This text is capitalized.</p>
+        <script>
+          const cssUpperCase =
+            document.body.querySelector(
+              ".uppercase"
+            ).firstChild;
+          console.log("cssUpperCase => ", cssUpperCase);
+        </script>
+      </div>
+      <div class="text__spacing">
+        <h4 style="letter-spacing: -1px">
+          The letter-spacing property is used to specify the
+          space between the characters in a text.
+        </h4>
+        <p style="text-indent: 100px">
+          The text-indent property is used to specify the
+          indentation of the first line of a text:
+        </p>
+        <p style="line-height: 0.7">
+          This is a paragraph with a smaller line-height.<br />
+          This is a paragraph with a smaller line-height.<br />
+        </p>
+        <p style="word-spacing: 20px">
+          The word-spacing property is used to specify the
+          space between the words in a text.
+        </p>
+        <p style="white-space: nowrap">
+          The white-space property specifies how white-space
+          inside an element is handled.
+        </p>
       </div>
     </section>
-    <script>
-      const cssUpperCase =
-        document.body.querySelector(".uppercase");
-      console.log("cssUpperCase => ", cssUpperCase);
-    </script>
     <script src="main.js"></script>
   </body>
 </html>
