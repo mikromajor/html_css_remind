@@ -1,3 +1,16 @@
+.combinators__descendent p {
+  background-color: yellow;
+}
+.combinators__child > p {
+  background-color: rgb(117, 248, 156);
+}
+.combinators__adjacent + p {
+  background-color: rgb(117, 248, 156);
+}
+.combinators__general ~ p {
+  background-color: rgb(117, 248, 156);
+}
+
 .text__lines {
   background-color: hsla(120, 77%, 62%, 0.511);
   margin-top: 50px;
