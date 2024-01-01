@@ -15,14 +15,19 @@
         margin: auto;
         margin-bottom: 20px;
         padding: 5px;
-        border: 5px solid rgb(146, 146, 141);
+        border: 5px solid rgb(179, 179, 179);
         border-radius: 20px;
+        box-shadow: 7px 7px 10px #6c6c6c;
       }
       section > div {
         border-radius: 10px;
         border: 2px solid hsla(120, 30%, 30%, 0.8);
-        margin-top: 20px;
+        box-shadow: 3px 3px 5px hsl(120, 9%, 56%);
+        margin: 20px 5px;
         padding: 10px;
+      }
+      section > h1 {
+        text-align: center;
       }
     </style>
     <script>
@@ -32,6 +37,7 @@
   </head>
   <body>
     <section>
+      <h1>CSS [attribute] Selector</h1>
       <div>
         <h2>CSS [attribute] Selector</h2>
         <style>
@@ -99,8 +105,9 @@
       </div>
     </section>
     <section class="combinators">
+      <h1>Combinators between simple selectors</h1>
       <div class="combinators__list">
-        <h1>Combinators between simple selectors</h1>
+        <h2>Combinators list:</h2>
         <ul>
           <li>
             descendent selector <b>"div p" всі нащадки</b>
@@ -193,18 +200,17 @@
         <span>Text 6</span>
         <p>Paragraph 7.</p>
       </div>
-      >
     </section>
     <section class="text">
+      <h1>Text alignment</h1>
       <div class="text__alignment">
-        <h1>Text alignment</h1>
-        <h2>Example text-align: justify</h2>
+        <h2>text-align: justify:</h2>
 
-        <dd><b>The text-align: justify;</b></dd>
-        <dl>
-          value stretches the lines so that each line has
-          equal width (like in newspapers and magazines).
-        </dl>
+        <p>
+          It's value stretches the lines so that each line
+          has equal width (like in newspapers and
+          magazines).
+        </p>
 
         <div style="text-align: justify">
           In my younger and more vulnerable years my father
@@ -240,6 +246,7 @@
         </p>
       </div>
       <div class="text__lines">
+        <h2>text-decoration</h2>
         <p style="text-decoration: overline">
           text-decoration: overline;
         </p>
@@ -256,7 +263,7 @@
         </p>
       </div>
       <div class="text__transform">
-        <h2>Using the text-transform property</h2>
+        <h2>text-transform property</h2>
 
         <p class="uppercase">
           This text is transformed to uppercase by css but
@@ -266,6 +273,7 @@
           This text is transformed to lowercase.
         </p>
         <p class="capitalize">This text is capitalized.</p>
+
         <script>
           const cssUpperCase =
             document.body.querySelector(
@@ -275,25 +283,27 @@
         </script>
       </div>
       <div class="text__spacing">
-        <h4 style="letter-spacing: -1px">
-          The letter-spacing property is used to specify the
-          space between the characters in a text.
-        </h4>
+        <p style="letter-spacing: -1px">
+          The <b>letter-spacing property</b> is used to
+          specify the space between the characters in a
+          text.
+        </p>
         <p style="text-indent: 100px">
-          The text-indent property is used to specify the
-          indentation of the first line of a text:
+          The <b>text-indent property</b> is used to specify
+          the indentation of the first line of a text:
         </p>
         <p style="line-height: 0.7">
+          <b>line-height property</b>
           This is a paragraph with a smaller line-height.<br />
           This is a paragraph with a smaller line-height.<br />
         </p>
         <p style="word-spacing: 20px">
-          The word-spacing property is used to specify the
-          space between the words in a text.
+          The <b>word-spacing property</b> is used to
+          specify the space between the words in a text.
         </p>
         <p style="white-space: nowrap">
-          The white-space property specifies how white-space
-          inside an element is handled.
+          The <b>"white-space: nowrap"</b> specifies how
+          white-space inside an element is handled.
         </p>
       </div>
       <div class="text__shadow">
