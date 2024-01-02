@@ -26,7 +26,8 @@
         margin: 20px 5px;
         padding: 10px;
       }
-      section > h1 {
+      section > h1,
+      section h2 {
         text-align: center;
       }
     </style>
@@ -316,6 +317,43 @@
           Text shadow effects
         </h1>
       </div>
+    </section>
+    <section id="counter">
+      <h2>CSS Counters</h2>
+      <p>
+        Used with the ::before and ::after pseudo-elements,
+        to insert generated content
+      </p>
+      <style>
+        body {
+          counter-reset: section;
+        }
+
+        #counter ul {
+          counter-reset: subsection;
+        }
+
+        #counter ul::before {
+          counter-increment: section;
+          content: "List " counter(section) ". ";
+        }
+
+        #counter li::before {
+          counter-increment: subsection;
+          content: counter(section) "." counter(subsection)
+            " ";
+        }
+      </style>
+      <ul>
+        <li>Some text</li>
+        <li>Some text</li>
+        <li>Some text</li>
+      </ul>
+      <ul>
+        <li>Some text</li>
+        <li>Some text</li>
+        <li>Some text</li>
+      </ul>
     </section>
     <script src="main.js"></script>
   </body>
