@@ -355,6 +355,99 @@
         <li>Some text</li>
       </ul>
     </section>
+
+    <section id="pseudo-class">
+      <h2>CSS Pseudo-classes</h2>
+      <ul>
+        <li>:link</li>
+        <li>:visited</li>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:first-child</li>
+      </ul>
+      <style>
+        /* unvisited link */
+        .pseudo-class:link {
+          color: red;
+        }
+
+        /* visited link */
+        .pseudo-class:visited {
+          color: green;
+        }
+
+        /* mouse over link */
+        .pseudo-class:hover {
+          color: hotpink;
+        }
+
+        /* selected link */
+        .pseudo-class:active {
+          color: blue;
+        }
+      </style>
+      <div>
+        <p>
+          A pseudo-class is used to define a special state
+          of an element.
+        </p>
+        <p><a href="//">Click me for example</a></p>
+        <p>
+          <b
+            >Important!!! Styles must come in this order
+            =></b
+          >
+        </p>
+
+        <p>
+          <b>:link, :visited, :hover, :active</b>
+        </p>
+        <p><em> otherwise it can't work correctly </em></p>
+      </div>
+      <div>
+        <h3>Example with hidden box</h3>
+        <style>
+          .hidden {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+          }
+          .string {
+            color: blue;
+          }
+          .string:hover .hidden {
+            display: block;
+          }
+        </style>
+        <div class="string">
+          Hover over this div element to show the p element
+          <p class="hidden">Tada! Here I am!</p>
+        </div>
+      </div>
+      <div class="first-child-box">
+        <h3>:first-child</h3>
+        <style>
+          .first-child-box p:first-child {
+            color: green;
+          }
+          .first-child-box p:last-child {
+            color: red;
+          }
+        </style>
+        <p>
+          Правило збігається з першим нащадком якщо він
+          відповідає вказаному елементу.
+        </p>
+        <p>В цій коробці першим нащадном є h3-тег</p>
+        <p>This is some text.</p>
+
+        <div>
+          <p>This is first paragraph in new box.</p>
+          <p>some text</p>
+          <p>This is last-child (last paragraph)</p>
+        </div>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
