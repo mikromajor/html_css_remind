@@ -10,27 +10,6 @@
 .combinators__general ~ p {
   background-color: rgb(117, 248, 156);
 }
-
-.text__lines {
-  background-color: hsla(120, 77%, 62%, 0.511);
-  margin-top: 50px;
-  padding: 10px;
-}
-.text__lines p {
-  padding: 5px;
-}
-
-p.uppercase {
-  text-transform: uppercase;
-}
-
-p.lowercase {
-  text-transform: lowercase;
-}
-
-p.capitalize {
-  text-transform: capitalize;
-}
 p {
   text-indent: 50px;
 }
