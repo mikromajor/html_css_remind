@@ -26,7 +26,7 @@
         margin: 20px 5px;
         padding: 10px;
       }
-      section > h1,
+      section h1,
       section h2 {
         text-align: center;
       }
@@ -246,7 +246,10 @@
           diam, consequat gravida libero rhoncus ut.
         </p>
       </div>
-      <div class="text__lines">
+
+      <div
+        style="background-color: hsla(120, 77%, 62%, 0.511)"
+      >
         <h2>text-decoration</h2>
         <p style="text-decoration: overline">
           text-decoration: overline;
@@ -266,15 +269,18 @@
       <div class="text__transform">
         <h2>text-transform property</h2>
 
-        <p class="uppercase">
+        <p><b>text-transform: uppercase;</b></p>
+        <p style="text-transform: uppercase">
           This text is transformed to uppercase by css but
           node firstChild is text without uppercase.
         </p>
-        <p class="lowercase">
-          This text is transformed to lowercase.
-        </p>
-        <p class="capitalize">This text is capitalized.</p>
-
+        <p><i>enter f12 to see console.log</i></p>
+        <code>
+          const cssUpperCase = document.body.querySelector(
+          ".uppercase" ).firstChild;
+          console.log("cssUpperCase => ",
+          cssUpperCase);</code
+        >
         <script>
           const cssUpperCase =
             document.body.querySelector(
@@ -282,6 +288,18 @@
             ).firstChild;
           console.log("cssUpperCase => ", cssUpperCase);
         </script>
+        <br />
+        <p>
+          <b> text-transform: lowercase; </b>
+        </p>
+        <p style="text-transform: lowercase">
+          This text is transformed to lowercase.
+        </p>
+        <br />
+        <p><b> text-transform: capitalize; </b></p>
+        <p style="text-transform: capitalize">
+          This text is capitalized.
+        </p>
       </div>
       <div class="text__spacing">
         <p style="letter-spacing: -1px">
