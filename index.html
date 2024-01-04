@@ -346,6 +346,7 @@
       </div>
 
       <div
+        id="text-decoration"
         style="background-color: hsla(120, 77%, 62%, 0.511)"
       >
         <h2>text-decoration</h2>
@@ -364,7 +365,7 @@
           text-decoration: underline red double 5px;
         </p>
       </div>
-      <div class="text__transform">
+      <div id="text-transform">
         <h2>text-transform property</h2>
 
         <p><b>text-transform: uppercase;</b></p>
@@ -399,7 +400,7 @@
           This text is capitalized.
         </p>
       </div>
-      <div class="text__spacing">
+      <div id="text__spacing">
         <p><b>letter-spacing property</b></p>
         <p style="letter-spacing: -1px">
           used to specify the space between the characters
@@ -434,7 +435,7 @@
                                          in HTML       :)" 
         </pre>
       </div>
-      <div class="text__shadow">
+      <div id="text__shadow">
         <h1
           style="
             text-shadow: 2px 2px 4px #000000;
@@ -444,8 +445,37 @@
           Text shadow effects
         </h1>
       </div>
+      <div id="float">
+        <h2>float: right;</h2>
+        <p>
+          <img
+            src="./images/gsap.png"
+            alt="gsap"
+            style="width: 70px; height: 70px; float: right"
+          />
+          The following example specifies that an image
+          should float to the right in a text:
+        </p>
+      </div>
+
+      <div id="clear">
+        <h2>clear: right</h2>
+        <img
+          src="./images/gsap.png"
+          alt="gsap"
+          style="width: 70px; height: 70px; float: right"
+        />
+        <p style="clear: right">
+          When we use the float property, and we want the
+          next element below (not on right or left), we will
+          have to use the clear property.
+        </p>
+      </div>
     </section>
 
+    <section id="align">
+      <h1>Align</h1>
+    </section>
     <section id="css_counter">
       <h2>CSS Counters</h2>
       <p>
@@ -483,6 +513,8 @@
         <li>Some text</li>
       </ul>
     </section>
+
+    <section></section>
 
     <script src="main.js"></script>
   </body>
