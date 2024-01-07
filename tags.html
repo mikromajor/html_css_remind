@@ -70,7 +70,7 @@
         ><b>"bdo"</b> tag -> is used to override the current
         text direction</bdo
       >
-      <div id="links">
+      <section id="links">
         <h2>Links</h2>
         <ul>
           <li>Use the "a" element to define a link</li>
@@ -114,64 +114,71 @@
             job13051987@gmail.com у полі відправити кому</a
           >
         </p>
-      </div>
+      </section>
       <br />
-      <div>
-        <h2>Image</h2>
+      <section id="images">
+        <h2>Images</h2>
 
-        <img
-          src="./images/gsap.png"
-          alt="gsap"
-          usemap="#workmap"
-          width="400"
-          height="379"
-        />
+        <div>
+          <h2>Image</h2>
 
-        <map name="workmap">
-          <area
-            shape="rect"
-            coords="100,75,300,250"
-            alt="Gsap logo"
-            href="https://gsap.com/"
+          <img
+            src="./images/gsap.png"
+            alt="gsap"
+            usemap="#workmap"
+            width="400"
+            height="379"
           />
-          <area
-            shape="circle"
-            coords="150,300,20"
-            alt="another area"
-            href="https://www.w3schools.com/html/html_images_imagemap.asp"
-          />
-        </map>
-        <p>
-          shape="rect" - прямокутник coords="150,300,20" -
-          (x,y start) (x,y end)
-        </p>
-        <p>
-          shape="circle" - coords="337,300,44" - (x,y centr)
-          (z-diameter)
-        </p>
-      </div>
-      <div>
-        <h2>Picture</h2>
-        <p>зміни розміри екрану</p>
-        <picture>
-          <source
-            media="(min-width: 650px)"
-            srcset="./images/gsap.png"
-          />
-          <source
-            media="(min-width:450px)"
-            srcset="./images/f.png"
-          />
-          <img src="./images/ant.png" style="width: auto" />
-        </picture>
-        <h3>Коли використовувать picture</h3>
-        <ol>
-          <li>
-            габарити екрану (менше фото швидше грузить)
-          </li>
-          <li>підтримка формату фото браузером</li>
-        </ol>
-      </div>
+
+          <map name="workmap">
+            <area
+              shape="rect"
+              coords="100,75,300,250"
+              alt="Gsap logo"
+              href="https://gsap.com/"
+            />
+            <area
+              shape="circle"
+              coords="150,300,20"
+              alt="another area"
+              href="https://www.w3schools.com/html/html_images_imagemap.asp"
+            />
+          </map>
+          <p>
+            shape="rect" - прямокутник coords="150,300,20" -
+            (x,y start) (x,y end)
+          </p>
+          <p>
+            shape="circle" - coords="337,300,44" - (x,y
+            centr) (z-diameter)
+          </p>
+        </div>
+        <div>
+          <h2>Picture</h2>
+          <p>зміни розміри екрану</p>
+          <picture>
+            <source
+              media="(min-width: 650px)"
+              srcset="./images/gsap.png"
+            />
+            <source
+              media="(min-width:450px)"
+              srcset="./images/f.png"
+            />
+            <img
+              src="./images/ant.png"
+              style="width: auto"
+            />
+          </picture>
+          <h3>Коли використовувать picture</h3>
+          <ol>
+            <li>
+              габарити екрану (менше фото швидше грузить)
+            </li>
+            <li>підтримка формату фото браузером</li>
+          </ol>
+        </div>
+      </section>
       <section id="lists">
         <h2>Lists</h2>
         <div>
