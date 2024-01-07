@@ -110,6 +110,56 @@
           >
         </p>
       </div>
+      <br />
+      <div>
+        <h2>Image</h2>
+
+        <img
+          src="./images/gsap.png"
+          alt="gsap"
+          usemap="#workmap"
+          width="400"
+          height="379"
+        />
+
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="100,75,300,250"
+            alt="Gsap logo"
+            href="https://gsap.com/"
+          />
+          <area
+            shape="circle"
+            coords="150,300,20"
+            alt="another area"
+            href="https://www.w3schools.com/html/html_images_imagemap.asp"
+          />
+        </map>
+        <p>
+          shape="rect" - прямокутник coords="150,300,20" -
+          (x,y start) (x,y end)
+        </p>
+        <p>
+          shape="circle" - coords="337,300,44" - (x,y centr)
+          (z-diameter)
+        </p>
+      </div>
+      <div>
+        <h2>Picture</h2>
+        <p>зміни розміри екрану</p>
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="./images/gsap.png"
+          />
+          <source
+            media="(min-width:450px)"
+            srcset="./images/f.png"
+          />
+          <img src="./images/ant.png" style="width: auto" />
+        </picture>
+      </div>
     </main>
   </body>
 </html>
