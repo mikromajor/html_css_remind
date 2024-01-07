@@ -33,6 +33,9 @@
       section p {
         text-indent: 2rem;
       }
+      ul li a {
+        text-decoration: none;
+      }
     </style>
     <script>
       // let d = new Date();
@@ -40,20 +43,19 @@
     </script>
   </head>
   <body>
-    <nav>
+    <nav style="position: fixed">
       <ul>
         <li>
-          <a href="tags.html"> Remember tags</a>
+          <a href="tags.html"> Go to "Remember tags"</a>
         </li>
+        <li><a href="#pseudo-class">pseudo-class</a></li>
+        <li><a href="#combinators">combinators</a></li>
+        <li><a href="#align">align</a></li>
         <li>
-          <a
-            href="#color"
-            name="top"
-            style="text-decoration: none"
-          >
-            go to Colors
-          </a>
+          <a href="#text_alignment">text_alignment</a>
         </li>
+        <li><a href="#css_counter">css_counter</a></li>
+        <li><a href="#colors"> Colors </a></li>
       </ul>
     </nav>
     <section id="attribute_selector">
@@ -550,7 +552,7 @@
       <h1 style="background-color: hsla(9, 100%, 64%, 0.5)">
         hsla(9, 100%, 64%, 0.5)
       </h1>
-      <a href="#top" name="color">Go up</a>
+      <a href="#top">Go up</a>
     </section>
 
     <script src="main.js"></script>
