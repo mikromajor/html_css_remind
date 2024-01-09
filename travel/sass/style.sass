@@ -1,0 +1,203 @@
+@import variables
+
+html 
+  box-sizing: border-box
+*,
+*::before,
+*::after 
+  box-sizing: inherit
+
+body
+  font: 
+    family: "Lato"
+    style: normal
+    weight: normal
+    size: 16
+  line-height: 1.2em
+  color: $color_primary
+img
+  max-width: 100%
+  height: auto
+
+.header 
+  position: fixed
+  top: 0
+  left: 0
+  max-width: 1440px
+  width:100%
+  margin: 0
+  .header__wrapper
+    @extend %flex-wrap
+    @extend %max-width__1060
+    justify-content: space-between
+    align-items: center
+    padding-top: 55px
+    .header__logo_link 
+      text-decoration: none
+  .header__list
+    @extend %flex-wrap
+    .header__item
+      margin-right: 82px
+      &:last-child
+        margin-right: 0
+      .header__link
+        font-size: 18px
+        line-height: 24px
+        color: $secondary_color
+        text-decoration: none
+        &:hover, &:focus, &:active
+          opacity: .7
+.main
+  max-width: 1440px
+  margin: auto
+  .intro
+    padding-bottom: 370px
+    background: url("../img/hero.jpg") no-repeat center
+      size: cover
+    .intro__wrapper
+      @extend %flex-wrap
+      @extend %max-width__1060
+      .intro__title
+        max-width: 620px
+        padding-top: 260px
+        line-height: 60px
+        @extend %font__h1
+      .intro__subtitle
+        max-width: 550px
+        margin-top:22px
+        margin-bottom: 60px
+        font-size: 16px
+        line-height: 24px
+        color: $secondary_color
+      .search_form__info
+        @extend %flex-wrap 
+        .search_form__field
+          width: 300px
+          background: transparent url('../img/svg/oval_20x20.svg') no-repeat left 8px
+            size: 20px
+          margin-right: 60px
+          padding-left: 40px
+          padding-bottom: 20px
+          border: 0
+          border-bottom: 2px solid #BFC0C5
+          @extend %search_form__field__font
+          &::placeholder
+            @extend %search_form__field__font
+        .search_form__submit
+          font-weight: 500
+          font-size: 24px
+          line-height: 28px
+          padding: 15px 40px
+          width: 180px
+          height: 60px
+          color: $secondary_color
+          background-color:  #1B7DFF
+          border: 0
+  .benefit
+    max-width: 1260px
+    min-height: 435px
+    padding-bottom: 100px
+    margin: 0 auto 130px
+    position: relative
+    background-color: $benefit__bgc
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993)
+    .benefit__title
+      width: 100%
+      height: 220px
+      position: absolute
+      transform: translateY(-100%)
+      background-color: $benefit__bgc
+      .benefit__title__content
+        max-width: 280px
+        font-weight: 500
+        font-size: 36px
+        line-height: 42px
+        margin: 90px 0 90px 100px
+        color: #102746
+    .benefit__cards
+      @extend %flex-wrap
+      @extend %max-width__1060
+      column-gap: 50px
+      background-color: $benefit__bgc
+      .benefit__card
+        width: 320px
+        min-height: 290px
+        .benefit__card__img
+          width: 60px
+          height: 60px
+          margin-top: 35px
+          margin-bottom: 35px
+        .benefit__card__title
+          font-weight: 500
+          font-size: 18px
+          line-height: 24px
+          color: black
+          margin-bottom:24px
+        .benefit__card__content
+          line-height: 24px
+          color: black
+          margin-bottom: 40px
+        .benefit__card__link
+          @extend %link__arrow
+  .inspired
+    max-width: 1260px
+    min-height: 735px
+    align-items: start
+    margin: 0 auto 130px
+    .inspired__wrap_title
+      @extend %flex-wrap
+      width: 100%
+      min-height: 42px
+      align-items: center
+      @extend %max-width__1060
+      justify-content: space-between
+      margin-bottom: 42px
+      .inspired__title
+        font-weight: 500
+        font-size: 35px
+        line-height: 42px
+        color: #102746
+        position: relative
+        margin-right: 100px
+        padding-bottom: 7px
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          border-bottom: 3px solid #006DFE
+          width: 250px
+      .inspired__link
+        @extend %link__arrow
+        line-height: 24px
+        padding-bottom: 9px
+        padding-top: 9px
+    .inspired__imgs
+      display: grid
+      grid-template-columns: repeat(6, minmax(50px, 1fr))
+      grid-template-rows:  repeat(5, 1fr)
+      grid-gap: 10px
+      .inspired__block__lg
+        grid-column: span 3
+        grid-row: span 3
+        z-index: 2
+        .inspired__img
+          height: 354px
+          object-fit: cover
+          z-index: 1
+        .inspired__img__title
+          z-index: 3
+      .inspired__block__sm
+        grid-column: span 2
+        grid-row: span 2
+        z-index: 2
+        .inspired__img
+          height: 283px
+          object-fit: cover
+          z-index: 1
+        .inspired__img__title
+          z-index: 3
+
+
+
+
